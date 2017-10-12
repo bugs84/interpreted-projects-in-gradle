@@ -1,15 +1,30 @@
-import cz.vondr.gradle.DistanceCalculator
+
+
+//import cz.vondr.gradle.HelloKotlin
 
 group 'cz.vondr.gradle'
 version '1.0-SNAPSHOT'
 
+
 apply plugin: 'groovy'
+apply plugin: "kotlin"
+buildscript {
+    ext.kotlin_version = '1.1.51'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
 
 // Dependencies for compilation are in "buildSrc/build.gradle" !
 
-task printDistanceFromPardubiceToPrague {
+task helloKotlin {
     doLast {
-        def distance = new DistanceCalculator("Pardubice", "Praha").distance
-        println distance
+        def hello = new cz.vondr.gradle.HelloKotlin()
+        println hello.hello
     }
 }

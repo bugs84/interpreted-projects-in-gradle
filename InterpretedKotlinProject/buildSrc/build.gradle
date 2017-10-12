@@ -3,5 +3,22 @@ repositories {
 }
 
 dependencies {
-    compile 'com.jcabi:jcabi-http:1.16'
+    compile 'org.apache.commons:commons-lang3:3.6'
 }
+
+
+apply plugin: "kotlin"
+
+buildscript {
+    ext.kotlin_version = '1.1.51'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+
