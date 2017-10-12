@@ -1,0 +1,5 @@
+syntax: glob
+InterpretedGroovyProject/.gradle/
+InterpretedGroovyProject/.idea/
+InterpretedGroovyProject/buildSrc/.gradle/
+InterpretedGroovyProject/buildSrc/build/
