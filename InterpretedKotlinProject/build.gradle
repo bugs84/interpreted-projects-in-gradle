@@ -1,0 +1,15 @@
+import cz.vondr.gradle.DistanceCalculator
+
+group 'cz.vondr.gradle'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+
+// Dependencies for compilation are in "buildSrc/build.gradle" !
+
+task printDistanceFromPardubiceToPrague {
+    doLast {
+        def distance = new DistanceCalculator("Pardubice", "Praha").distance
+        println distance
+    }
+}
