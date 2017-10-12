@@ -3,3 +3,7 @@ InterpretedGroovyProject/.gradle/
 InterpretedGroovyProject/.idea/
 InterpretedGroovyProject/buildSrc/.gradle/
 InterpretedGroovyProject/buildSrc/build/
+InterpretedJavaProject/.gradle/
+InterpretedJavaProject/.idea/
+InterpretedJavaProject/buildSrc/.gradle/
+InterpretedJavaProject/buildSrc/build/
