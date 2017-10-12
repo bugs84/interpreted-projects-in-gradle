@@ -2,11 +2,11 @@ package cz.vondr.gradle
 
 import com.jcabi.http.request.JdkRequest
 
-class DistanceCounter {
+class DistanceCalculator {
     private String from
     private String to
 
-    DistanceCounter(String from, String to) {
+    DistanceCalculator(String from, String to) {
         this.from = from
         this.to = to
     }
