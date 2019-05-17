@@ -1,14 +1,4 @@
 syntax: glob
-InterpretedGroovyProject/.gradle/
-InterpretedGroovyProject/.idea/
-InterpretedGroovyProject/buildSrc/.gradle/
-InterpretedGroovyProject/buildSrc/build/
-InterpretedJavaProject/.gradle/
-InterpretedJavaProject/.idea/
-InterpretedJavaProject/buildSrc/.gradle/
-InterpretedJavaProject/buildSrc/build/
-InterpretedKotlinProject/.gradle/
-InterpretedKotlinProject/.idea/
-InterpretedKotlinProject/buildSrc/.gradle/
-InterpretedKotlinProject/buildSrc/build/
-InterpretedKotlinProject/build/
+.idea/
+.gradle/
+build/
