@@ -17,9 +17,9 @@ repositories {
 }
 
 tasks.withType<KotlinCompile> {
-	kotlinOptions {
-		jvmTarget = "1.8"
-	}
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 // PROJECT SPECIFIC SETUP -------------------------
@@ -28,12 +28,17 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:3.9")
 }
 
+tasks {
 
-task("helloKotlin", JavaExec::class) {
-    main = "cz.vondr.gradle.HelloKotlinKt"
-    classpath = sourceSets["main"].runtimeClasspath
+    val helloKotlin by registering(JavaExec::class) {
+        main = "cz.vondr.gradle.HelloKotlinKt"
+        classpath = sourceSets["main"].runtimeClasspath
 
-    // To start with debugger => set 'true'
-    debug = false
+        // To start with debugger => set 'true'
+        debug = false
+    }
+
 }
+
+
 
