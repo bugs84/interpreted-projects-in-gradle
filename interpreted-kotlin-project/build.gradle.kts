@@ -55,6 +55,8 @@ dependencies {
 tasks {
 
     val helloKotlin by registering(JavaExec::class) {
+        group = "!!!tasks!!!"
+        
         main = "cz.vondr.gradle.HelloKotlinKt"
         classpath = sourceSets["main"].runtimeClasspath
 
