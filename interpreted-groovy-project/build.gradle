@@ -1,0 +1,26 @@
+group 'cz.vondr.gradle'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.5.7'
+
+    //project dependencies:
+    compile 'com.jcabi:jcabi-http:1.16'
+}
+
+tasks {
+
+    task printWeatherForecast(type: JavaExec) {
+        classpath sourceSets.main.runtimeClasspath
+        main = "cz.vondr.gradle.Main"
+        // For debugging - change this to true and after start attach remote debugger
+        debug = false
+    }
+
+}
